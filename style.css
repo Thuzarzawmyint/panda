@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+/*--------------------------------------------------------------Header--Header--Header-----------------------------------------------------------*/
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(48, 46, 46, 0.7)),
+    url("img/header3.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 130px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header-content {
+  width: 90%;
+  margin-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-content img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 130px 0 20px 180px;
+  transition: 1s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-content p {
+  margin-left: 40px;
+  font-size: 22px;
+  color: white;
+  margin-top: 80px;
+  font-weight: 400px;
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  background: black;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  margin: 50px 0 0 0;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  width: 150px;
+  height: 45px;
+  font-weight: 200px;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+/*------------------------------------------------------------Question--Question--Question----------------------------------------------------------------------------------*/
+.ques {
+  padding: 50px 12%;
+  font-size: 22px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ques h1 {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+.text-clm {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-clm {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.text-clm h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-clm p {
+  font-size: 20px;
+  margin: 0 20px 0 20px;
+}
+
+.left {
+  margin: 0 20px 0 10px;
+  font-size: 20px;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.right {
+  margin: 0 20px 0 10px;
+  font-size: 20px;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.glow {
+  display: block;
+  width: 50%;
+  margin: auto;
+  border-radius: 50%;
+  animation-name: glow;
+  animation-duration: 2s;
+}
+
+@keyframes glow {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+  40% {
+    box-shadow: 0px 0px 30px white;
+  }
+}
+
+@media (max-width: 800px) {
+  .qysk {
+    padding: 20px 10%;
+  }
+  .accordion {
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .ques {
+    padding: 20px 10%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .text-clm {
+    margin-left: 0;
+  }
+  .img-clm {
+    margin-left: 0;
+  }
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+  }
+
+  .header h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .header-content {
+    width: 90%;
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .header-content img {
+    width: 35px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 130px 0 20px 70px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .header-content p {
+    margin-left: 40px;
+    font-size: 22px;
+    color: white;
+    margin-top: 30px;
+    font-weight: 400px;
+    text-align: center;
+  }
+
+  .btn {
+    position: absolute;
+    background: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    width: 150px;
+    height: 45px;
+    font-weight: 200px;
+    border-radius: 10px;
+    transition: 0.8s;
+  }
+
+  .btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+  }
+}
+
+/*-------------------------------------Questions--You--Should--Know--Questions--You--Should--Know----------------------------------------------------------------------------------------------*/
+.qysk {
+  margin-top: 30px;
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.qysk h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.accordion {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion li label {
+  background: #303030;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion li label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+.accordion li input[type="radio"] {
+  display: none;
+}
+
+.accordion .answer {
+  background: #303030;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  text-align: left;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion li input[type="radio"]:checked + label + .answer {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordion li input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+/*---------------------------------------------------------Footer--Footer--Footer----------------------------------------------------------------*/
+.footer {
+  padding: 30px 15% 10px;
+  color: white;
+  background-color: black;
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/*----------------------------------------------------Copyright--Copyright--Copyright-------------------------------------------------------------*/
+.copyright-txt {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
